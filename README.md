@@ -10,7 +10,6 @@ This project leverages historical sales, impressions, and clicks data to build a
 1. **Data Preprocessing**:  
    - Merging datasets from multiple sources into a unified structure.  
    - Handling missing values and outliers using IQR-based techniques.  
-   - Feature engineering through one-hot encoding and creating new features like `New_quantity`.
 
 2. **Exploratory Data Analysis (EDA)**:  
    - Visual insights using line graphs, scatter plots, and correlation heatmaps.  
