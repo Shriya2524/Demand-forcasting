@@ -21,26 +21,30 @@ This project leverages historical sales, impressions, and clicks data to build a
    - **Time Series Modeling**:  
      - Comparison of ARIMA, SARIMA, ARIMAX, and SARIMAX models.  
      - Evaluated models based on metrics like MAE, RMSE, and MAPE to select the best approach for long-term forecasting.  
-     - SARIMAX chosen for its ability to capture seasonality and align with real-world trends.  
+     - **SARIMAX** was chosen for its ability to capture seasonality and align with real-world trends.  
    - **Multivariate Regression**:  
      - Dynamic regression incorporating lagged variables to capture dependencies across predictors.  
      - Comparison of dynamic regression with basic multiple regression models.  
-     - Evaluated performance using Adjusted R-squared, RMSE, and MAE metrics.
+     - Evaluated performance using Adjusted R-squared, RMSE, and MAE metrics.  
+     - **Multivariate regression** outperformed other models in all aspects, showing superior accuracy and generalization.
 
 ---
 
 ### **Results**  
 - **Seasonality Insights**:  
   - Sales peak during weekends and in specific months (December and May).  
-  - Clear seasonal trends identified using SARIMAX, improving long-term prediction reliability.  
-
+  - Clear seasonal trends identified using SARIMAX, improving long-term prediction reliability.
 - **Correlation Analysis**:  
   - Impressions and clicks strongly correlate with sales, emphasizing their importance as features in predictive modeling.  
 
 - **Modeling Outcomes**:  
-  - **SARIMAX**: Performed best in capturing seasonal trends and demand fluctuations, despite slightly higher error metrics.  
+  - **SARIMAX**: Performed well in capturing seasonal trends and demand fluctuations, despite slightly higher error metrics.  
   - **Multivariate Regression**: Showed improved flexibility by incorporating multiple predictors and lagged variables, leading to better short-term and dynamic predictions.  
   - **Dynamic Regression Models**: Outperformed basic regression models with superior Adjusted R-squared and reduced RMSE, showcasing the advantage of accounting for temporal relationships between variables.
+
+- **Performance Comparison**:  
+  - The **multivariate model** consistently outperformed all other models (AR, MA, ARIMA, SARIMA) in terms of MAE, RMSE, and MAPE, both before and after tuning.  
+  - **Multivariate regression** achieved the lowest error metrics (MAE of 3.206892, RMSE of 3.919786, MAPE of 22.718629), making it the optimal model for this analysis.
 
 ---
 
@@ -50,5 +54,4 @@ The project demonstrates how AI-driven forecasting models, complemented by multi
 - Actionable insights into seasonal trends, lagged dependencies, and key drivers of demand.  
 - Improved decision-making for inventory management, marketing campaigns, and resource allocation.  
 
-This dual modeling approach (time series and multivariate regression) highlights the synergy between historical patterns and dynamic relationships among predictors for smarter retail decision-making.  
-
+The dual modeling approach, combining time series and multivariate regression, highlights the synergy between historical patterns and dynamic relationships among predictors, leading to smarter retail decision-making.
